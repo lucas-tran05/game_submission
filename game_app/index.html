@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Echoes of Tomorrow</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="module" src="js/config.js"></script>
 </head>
@@ -25,6 +26,7 @@
                 <div class="ai-status" id="aiStatus"></div>
                 <button id="startButton" class="btn btn-primary">Start Journey</button>
                 <button id="howToPlayButton" class="btn btn-secondary">How to Play</button>
+                <button id="tutorialButton" class="btn btn-secondary">Tutorial</button>
                 <button id="clearCacheButton" class="btn btn-secondary" style="font-size: 0.8em; margin-top: 10px;">🔄 Clear AI Cache & Regenerate</button>
             </div>
         </div>
@@ -76,8 +78,9 @@
             <div class="dashboard">
                 <div class="stat-card budget-card">
                     <div class="stat-header">
-                        <span class="stat-name">Budget</span>
-                        <span class="stat-number budget-value" id="budgetValue">100</span>
+                        <span class="stat-name">Budget </span>
+                        
+                        <span class="stat-number budget-value" id="budgetValue"> 100</span>
                     </div>
                     <div class="budget-subtext">million USD</div>
                 </div>
@@ -155,6 +158,8 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
     <script src="js/game.js"></script>
+    <script src="js/tutorial.js"></script>
 </body>
 </html>
