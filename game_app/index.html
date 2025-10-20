@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of Tomorrow</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="js/config.js"></script>
+</head>
+<body>
+    <div id="menuScreen" class="screen active">
+        <div class="container">
+            <div class="title-container">
+                <h1 class="game-title">Echoes of Tomorrow</h1>
+                <h2 class="game-subtitle">A Climate Change Management Game</h2>
+            </div>
+            <div class="menu-content">
+                <p class="intro-text">
+                    You are the manager of a small coastal town. Every decision you make will shape the community's future.
+                </p>
+                <p class="intro-text">
+                    Balance economic development, environmental protection, and citizen happiness.
+                </p>
+                <div class="ai-status" id="aiStatus"></div>
+                <button id="startButton" class="btn btn-primary">Start Journey</button>
+                <button id="howToPlayButton" class="btn btn-secondary">How to Play</button>
+                <button id="clearCacheButton" class="btn btn-secondary" style="font-size: 0.8em; margin-top: 10px;">🔄 Clear AI Cache & Regenerate</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="howToPlayScreen" class="screen">
+        <div class="container">
+            <h2>How to Play</h2>
+            <div class="instructions">
+                <div class="instruction-item">
+                    <h3>🎯 Objective</h3>
+                    <p>Manage the town for 10 years, balancing 3 important metrics:</p>
+                    <ul>
+                        <li><strong>Economy:</strong> Finance and development</li>
+                        <li><strong>Environment:</strong> Ecosystem health</li>
+                        <li><strong>Community:</strong> Citizen happiness</li>
+                    </ul>
+                </div>
+                <div class="instruction-item">
+                    <h3>📊 Gameplay</h3>
+                    <p>Each year, you'll face difficult decisions. Each choice affects the 3 metrics differently.</p>
+                </div>
+                <div class="instruction-item">
+                    <h3>💌 Community Feedback</h3>
+                    <p>Citizens will send letters reflecting on your decisions - from gratitude to protest.</p>
+                </div>
+                <div class="instruction-item">
+                    <h3>🏆 Endings</h3>
+                    <p>There are 5 different endings based on your decisions. Can you create a sustainable future?</p>
+                </div>
+            </div>
+            <button id="backToMenuButton" class="btn btn-secondary">Back</button>
+        </div>
+    </div>
+
+    <div id="gameScreen" class="screen">
+        <div class="game-container">
+            <div class="game-header">
+                <div class="year-info">
+                    <span class="year-label">Year</span>
+                    <span class="year-number" id="currentYear">1</span>
+                    <span class="year-total">/ 10</span>
+                </div>
+                <div class="town-info">
+                    <span id="townName">Blue Bay Town</span>
+                </div>
+            </div>
+
+            <div class="dashboard">
+                <div class="stat-card budget-card">
+                    <div class="stat-header">
+                        <span class="stat-name">Budget</span>
+                        <span class="stat-number budget-value" id="budgetValue">100</span>
+                    </div>
+                    <div class="budget-subtext">million USD</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-name">Economy</span>
+                        <span class="stat-number" id="economyValue">50</span>
+                    </div>
+                    <div class="stat-bar-bg">
+                        <div class="stat-bar economy-bar" id="economyBar" style="width: 50%"></div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-name">Environment</span>
+                        <span class="stat-number" id="environmentValue">50</span>
+                    </div>
+                    <div class="stat-bar-bg">
+                        <div class="stat-bar environment-bar" id="environmentBar" style="width: 50%"></div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-name">Community</span>
+                        <span class="stat-number" id="happinessValue">50</span>
+                    </div>
+                    <div class="stat-bar-bg">
+                        <div class="stat-bar happiness-bar" id="happinessBar" style="width: 50%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-section">
+                <h3 class="chart-title">Climate Change Data</h3>
+                <canvas id="climateChart"></canvas>
+            </div>
+
+            <div class="decision-section">
+                <div class="event-box">
+                    <h3 class="event-title" id="eventTitle"></h3>
+                    <p class="event-text" id="eventDescription"></p>
+                </div>
+                <div class="choices-grid" id="choicesContainer">
+                </div>
+            </div>
+
+            <div class="notification-area" id="notificationArea">
+            </div>
+        </div>
+    </div>
+
+    <div id="endingScreen" class="screen">
+        <div class="container">
+            <h2 class="ending-title" id="endingTitle"></h2>
+            <div class="ending-content">
+                <div class="ending-image" id="endingImage"></div>
+                <p class="ending-description" id="endingDescription"></p>
+                <div class="final-stats" id="finalStats"></div>
+                <div id="aiAnalysis" style="margin: 20px 0;"></div>
+                <div class="ending-message" id="endingMessage"></div>
+            </div>
+            <div class="ending-actions">
+                <button id="playAgainButton" class="btn btn-primary">Play Again</button>
+                <button id="mainMenuButton" class="btn btn-secondary">Main Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Loading Overlay -->
+    <div class="loading-indicator" id="loadingIndicator" style="display: none;">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <div class="loading-text" id="loadingText">Generating 10 years of scenarios with AI...</div>
+            <div class="loading-subtext" id="loadingSubtext">Using parallel generation for faster results...</div>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

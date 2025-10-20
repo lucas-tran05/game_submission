@@ -1,0 +1,183 @@
+=== REFINEMENT & DEBUGGING PROMPTS ===
+
+Prompt 1: Balance Adjustments
+"The game feels too easy to achieve good endings. Adjust stat impact values to create more meaningful trade-offs. Each choice should have clear opportunity costs. Review all 10 events and rebalance impacts so players must sacrifice one area to benefit another."
+
+Prompt 2: Climate Realism
+"Verify that temperature and sea level calculations are based on realistic climate science. Current formula: tempIncrease = (100 - environment) / 100 * 0.3. Is this realistic for a 10-year period? Adjust if needed to match IPCC projections."
+
+Prompt 3: NPC Letter Variety
+"The NPC letters feel repetitive. Create more diverse character voices and responses:
+- Different age groups (youth, working age, elderly)
+- Different professions (fisherman, teacher, business owner, farmer)
+- Different tones (grateful, worried, angry, hopeful)
+Ensure letters reflect cumulative decisions, not just the last choice."
+
+Prompt 4: UI Polish
+"Review the game UI for visual improvements:
+- Are stat bars clear and intuitive?
+- Do colors convey meaning effectively?
+- Is the chart readable and informative?
+- Are buttons visually distinct?
+- Is spacing and alignment consistent?
+Suggest specific CSS improvements."
+
+Prompt 5: Mobile Responsiveness Testing
+"Test the game on mobile devices and fix issues:
+- Are buttons large enough for touch?
+- Is text readable on small screens?
+- Do letters overlay properly?
+- Does the chart render correctly?
+- Are there any layout breaks?
+Provide mobile-specific CSS fixes."
+
+Prompt 6: Performance Bottlenecks
+"Profile the game for performance issues:
+- Are there unnecessary DOM manipulations?
+- Is the chart update causing lag?
+- Are transitions smooth on slower devices?
+- Are there memory leaks when replaying?
+Optimize any problematic code sections."
+
+Prompt 7: Edge Case Handling
+"Test and fix edge cases:
+- What happens if a stat reaches exactly 0?
+- What if multiple stats reach 0 simultaneously?
+- What if player rapidly clicks choices?
+- What if chart canvas is missing?
+- What if browser doesn't support ES6?
+Add appropriate error handling."
+
+Prompt 8: Narrative Coherence
+"Review all 10 events for narrative flow:
+- Do events build upon each other logically?
+- Are there contradictions in the storyline?
+- Do later events reference earlier decisions?
+- Is the difficulty curve appropriate?
+- Do endings feel earned based on choices made?
+Suggest improvements to story progression."
+
+Prompt 9: Accessibility Audit
+"Conduct accessibility review:
+- Test with keyboard-only navigation
+- Check color contrast ratios (WCAG AA standard)
+- Verify screen reader compatibility
+- Test with browser zoom at 200%
+- Check focus indicators
+Provide ARIA labels and semantic improvements."
+
+Prompt 10: Cross-Browser Compatibility
+"Test on different browsers and fix compatibility issues:
+- Chrome/Edge (Chromium)
+- Firefox
+- Safari
+- Mobile browsers
+Check for CSS property support, JavaScript API availability, and render differences."
+
+Prompt 11: Loading State Management
+"Add loading state for Chart.js CDN:
+- Show loading indicator while library loads
+- Handle load failure gracefully
+- Provide fallback if CDN is blocked
+- Initialize chart only after library is ready
+Prevent errors if Chart.js doesn't load."
+
+Prompt 12: Tutorial/Onboarding
+"Improve the 'How to Play' screen:
+- Make instructions clearer and more concise
+- Add visual examples or diagrams
+- Highlight key mechanics
+- Explain winning conditions
+- Show sample choice with impact preview
+Make it easier for new players to understand the game."
+
+Prompt 13: Feedback Clarity
+"Make game feedback more immediate and clear:
+- Animate stat changes prominently
+- Add sound effects or visual flashes (optional)
+- Show +/- numbers floating up from stats
+- Highlight which stats changed and by how much
+- Make climate chart updates more noticeable
+Help players understand the immediate impact of their choices."
+
+Prompt 14: Ending Variety Testing
+"Test that all 5 endings are achievable and distinct:
+- Play through multiple times with different strategies
+- Verify ending thresholds are balanced
+- Ensure ending descriptions are sufficiently different
+- Check that endings match player's choices
+- Adjust thresholds if any ending is too easy/hard to achieve"
+
+Prompt 15: Text Localization Quality
+"Review Vietnamese translations for:
+- Cultural appropriateness
+- Natural phrasing (not direct translation)
+- Consistency in terminology
+- Formal vs informal tone appropriateness
+- Grammar and spelling
+Ensure text feels authentically Vietnamese, not translated."
+
+Prompt 16: Data Persistence
+"Should we add save game functionality?
+- Consider localStorage for save states
+- Allow players to resume interrupted games
+- Track multiple playthroughs
+- Store achievement/ending unlock progress
+Weigh benefits vs added complexity for a short game."
+
+Prompt 17: Debug Mode
+"Create a debug/testing mode:
+- Skip to specific years
+- Set stats to specific values
+- Test specific endings
+- View all events quickly
+- Export decision history
+Make it easy to test all game paths without playing through completely."
+
+Prompt 18: Code Cleanup
+"Refactor code for maintainability:
+- Extract magic numbers to constants
+- Break large functions into smaller ones
+- Add JSDoc comments to functions
+- Remove unused code
+- Improve variable naming
+- Add code organization comments
+Make code easier to understand and modify."
+
+Prompt 19: Final Polish Pass
+"Do a final polish pass on all elements:
+- Fix any typos in text
+- Ensure consistent capitalization
+- Align all visual elements perfectly
+- Test all animations for smoothness
+- Verify all colors match the palette
+- Check that all buttons have hover states
+Make everything feel professional and cohesive."
+
+Prompt 20: Submission Checklist
+"Verify project meets all hackathon requirements:
+✓ Works fully in browser without backend
+✓ Uses only HTML, CSS, JavaScript
+✓ Addresses climate change theme
+✓ Has menu and play screens
+✓ Is 2D
+✓ Includes Chart.js for visualization
+✓ Vietnamese context and language
+✓ Educational and impactful
+✓ All files in correct directory structure
+✓ README.md complete
+✓ Prompt files documented
+✓ Ready for screenshot capture
+✓ Code is clean and well-commented"
+
+Refinement Notes:
+- Increased difficulty by adjusting stat impacts for better balance
+- Added more diverse NPC characters and letter content
+- Improved mobile responsiveness with better touch targets
+- Enhanced visual feedback for stat changes
+- Polished all transitions and animations
+- Verified all 5 endings are achievable
+- Added comprehensive error handling
+- Optimized chart update performance
+- Improved Vietnamese text authenticity
+- Cleaned up code with better organization and comments

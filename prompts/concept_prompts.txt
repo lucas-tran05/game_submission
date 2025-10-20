@@ -1,0 +1,35 @@
+=== CONCEPT BRAINSTORMING PROMPTS ===
+
+Prompt 1: Initial Game Concept
+"Create a web-based game concept about climate change in Vietnam that is educational, impactful, and fun. The game should be in 2D, use only HTML/CSS/JavaScript, and address pressing social challenges related to environmental sustainability in Vietnamese coastal communities. Suggest 3 different game concepts with different mechanics."
+
+Prompt 2: Narrative Development
+"Develop a narrative-driven game concept similar to 'Papers, Please' or 'Undertale' where the player is a town manager of a small Vietnamese coastal town. The game should explore themes of climate change, economic development vs environmental protection, and community wellbeing. Create a compelling story arc that spans 10 in-game years with meaningful choices."
+
+Prompt 3: Game Mechanics Design
+"Design a decision-based game mechanic where each choice affects three key metrics: Economy, Environment, and Community Happiness. Create 10 scenarios (one per year) that present realistic dilemmas faced by Vietnamese coastal towns. Each scenario should have 3 different choice options with varying impacts on the three metrics."
+
+Prompt 4: Educational Messaging
+"How can we make a climate change game educational without being preachy? Suggest ways to naturally integrate learning about sea level rise, temperature increase, sustainable development, and environmental policy into gameplay. The message should be 'Development is not always progress.'"
+
+Prompt 5: Ending Scenarios
+"Create 5 different ending scenarios for a climate management game based on the player's cumulative choices. Endings should reflect different balance points between economy, environment, and happiness. Include: Best ending (sustainable paradise), Balanced ending, Economy-focused ending, Environment-focused ending, and Failure ending."
+
+Prompt 6: Cultural Context
+"Provide specific examples of real environmental challenges faced by Vietnamese coastal towns that could be turned into game scenarios: industrial pollution, mangrove deforestation, tourism impact, fishing industry changes, natural disasters, etc."
+
+Prompt 7: NPC System Design
+"Design an NPC letter system where townspeople send feedback to the player based on their decisions. Create different character archetypes (fisherman, teacher, business owner, youth, elderly, etc.) and examples of positive, negative, and neutral letters they might send."
+
+Prompt 8: Target Audience
+"Define the target audience for an educational climate change game set in Vietnam. Should it target Vietnamese youth, international audiences, policymakers, or general players? How should this affect tone, language, and complexity?"
+
+Prompt 9: Replayability
+"How can we make a 10-year decision game replayable? Suggest features that encourage players to try different approaches: achievement system, decision tree visualization, comparison of different endings, etc."
+
+Prompt 10: Title and Branding
+"Suggest compelling bilingual titles (English/Vietnamese) for a climate change narrative game about coastal town management. The title should evoke themes of time, choice, consequences, and hope/warning about the future."
+
+Selected Concept:
+"Echoes of Tomorrow - Tiếng vọng của ngày mai"
+A narrative puzzle game where players manage a coastal Vietnamese town through 10 years of climate challenges, balancing economy, environment, and community happiness through meaningful choices that lead to 5 different endings.

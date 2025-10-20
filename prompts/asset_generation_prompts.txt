@@ -1,0 +1,93 @@
+=== ASSET GENERATION PROMPTS ===
+
+Prompt 1: Color Scheme
+"Generate a color palette for a climate change game set in a Vietnamese coastal town. The palette should evoke: ocean blues, tropical greens, warm sunsets, but also hint at environmental concern. Provide hex codes for: primary colors, accent colors, warning colors, success colors."
+
+Selected Palette:
+- Primary: #667eea (purple-blue), #764ba2 (deep purple)
+- Environment: #10b981 (green), #34d399 (light green)
+- Economy: #ffd700 (gold), #ffed4e (light gold)
+- Happiness: #f59e0b (amber), #fbbf24 (light amber)
+- Warning: #ef4444 (red)
+- Success: #10b981 (green)
+
+Prompt 2: Icon Selection
+"Suggest emoji or icon representations for game concepts in a climate management game:
+- Economy/Finance
+- Environment/Nature
+- Happiness/Community
+- Temperature rise
+- Sea level
+- Different building types
+- Different NPC characters"
+
+Selected Icons:
+💰 Economy
+🌿 Environment  
+😊 Happiness
+🌡️ Temperature
+🌊 Sea Level
+🏭 Factory
+🌳 Forest
+🏠 Housing
+🎓 Education
+⚡ Energy
+
+Prompt 3: UI Layout Design
+"Describe the optimal layout for a decision-based narrative game screen that needs to display:
+- Current year indicator
+- Three stat bars (economy, environment, happiness)
+- A climate change chart
+- Event description
+- Three choice buttons with impact preview
+- NPC letter notifications
+
+The layout should work on both desktop and mobile."
+
+Prompt 4: Visual Hierarchy
+"For a text-heavy decision game, how should we establish visual hierarchy to ensure players can quickly understand:
+1. What year they're on
+2. Current stat levels
+3. The current dilemma
+4. Available choices and their consequences
+5. Long-term climate trends"
+
+Prompt 5: Background Atmosphere
+"Describe a CSS gradient background that evokes both hope and urgency for a climate game. Should transition between calm/hopeful tones and urgent/concerning tones. Should work well with white content cards."
+
+Selected: gradient(135deg, #667eea 0%, #764ba2 100%)
+
+Prompt 6: Menu Screen Design
+"Design the visual structure for a compelling menu screen for 'Echoes of Tomorrow'. Should include: game title (English + Vietnamese), brief tagline, Start button, How to Play button, and convey the game's tone."
+
+Prompt 7: Stat Bar Visualization
+"Design an elegant stat bar visualization that clearly shows:
+- Current value (0-100)
+- Visual color coding for healthy/warning/critical levels
+- Smooth animations when values change
+- Icon representation
+- Label text
+Provide CSS animation properties."
+
+Prompt 8: Chart Styling
+"How should we style a Chart.js graph showing climate data (temperature and sea level rise) to be both educational and visually appealing? Suggest colors, line styles, legend placement, and axis configurations."
+
+Prompt 9: Letter/Notification Design
+"Design a notification card for NPC letters that:
+- Slides in from the right
+- Shows author name
+- Displays message content
+- Has different visual styles for positive/negative/neutral sentiment
+- Includes a close button
+- Auto-dismisses after 8 seconds"
+
+Prompt 10: Ending Screen Layout
+"Create a dramatic and informative ending screen layout that shows:
+- Ending title and category
+- Large visual icon/emoji representing the outcome
+- Narrative description of the ending
+- Final stats breakdown
+- Climate impact summary
+- Play Again and Main Menu buttons"
+
+Note: All visual assets were created using CSS, emoji icons, and Chart.js - no external image generation AI was needed due to the text-based nature of the game.

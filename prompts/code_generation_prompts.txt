@@ -1,0 +1,171 @@
+=== CODE GENERATION PROMPTS ===
+
+Prompt 1: HTML Structure
+"Create the complete HTML structure for a single-page narrative game with multiple screens:
+- Menu screen with title, description, Start and How to Play buttons
+- How to Play instructions screen
+- Main game screen with stats, chart area, event description, and choice buttons
+- Ending screen with results
+Include proper semantic HTML5 and Vietnamese language attributes."
+
+Prompt 2: CSS Reset and Base Styles
+"Provide a modern CSS reset and base styles for a web game including:
+- Box-sizing border-box for all elements
+- Smooth transitions
+- Responsive font sizing
+- Gradient background
+- Screen management system to show/hide different game states"
+
+Prompt 3: Button Styles
+"Create beautiful, modern button styles for a game interface with:
+- Primary action buttons (gradient, hover effects)
+- Secondary buttons (outlined style)
+- Choice buttons (card-like, left-aligned text, hover animations)
+- Different states (normal, hover, active)
+- Smooth transitions and transform effects"
+
+Prompt 4: Stat Bar Component
+"Write CSS and HTML structure for an animated stat bar component that shows:
+- Icon on the left
+- Label and value
+- Horizontal progress bar with gradient
+- Smooth width transitions when values change
+- Color coding based on value ranges
+- Responsive layout"
+
+Prompt 5: Game State Management
+"Create a JavaScript game state object and management system for a turn-based decision game that tracks:
+- Current year (1-10)
+- Three stat values (economy, environment, happiness) ranging 0-100
+- Decision history
+- Climate data arrays (temperature, sea level, years)
+Initialize with balanced starting values."
+
+Prompt 6: Event and Choice System
+"Design a JavaScript data structure for storing game events with:
+- Year number
+- Event title and description
+- Multiple choice options (3 per event)
+- Each choice having: text, description, stat impacts, and associated NPC letter
+Create examples for 10 different years with realistic Vietnamese coastal town scenarios."
+
+Prompt 7: Chart.js Integration
+"Write JavaScript code to initialize and update a Chart.js line chart that displays:
+- Two datasets: temperature increase and sea level rise
+- Dual Y-axes (left for temperature in °C, right for sea level in cm)
+- Updates dynamically as game progresses
+- Proper labels and legend
+- Responsive configuration"
+
+Prompt 8: Decision Processing Logic
+"Create a JavaScript function that processes player decisions:
+- Apply stat changes (clamped to 0-100 range)
+- Store decision in history
+- Update climate data based on environmental stat
+- Display NPC letter
+- Check for game over conditions (any stat reaches 0)
+- Progress to next year or end game
+- Smooth animations between states"
+
+Prompt 9: Letter Notification System
+"Write JavaScript to create a dynamic letter/notification system:
+- Takes author, content, and sentiment (positive/negative/neutral)
+- Creates styled div with slide-in animation
+- Different border colors based on sentiment
+- Close button functionality
+- Auto-dismiss after 8 seconds
+- Stack multiple letters in bottom-right corner"
+
+Prompt 10: Ending Calculation Logic
+"Create a function that determines game ending based on:
+- Average of three stats
+- Individual stat thresholds
+- Premature game over vs completing 10 years
+Define 5 distinct ending scenarios with title, description, and message
+Calculate and display: final stats, temperature rise, sea level rise"
+
+Prompt 11: Screen Navigation
+"Implement a screen management system that:
+- Shows only one screen at a time
+- Smooth transitions between menu, game, and ending screens
+- Event listeners for all navigation buttons
+- Reset game state when playing again
+- Chart cleanup and re-initialization"
+
+Prompt 12: Responsive Design
+"Add CSS media queries to make the game fully responsive:
+- Stack stat bars vertically on mobile
+- Adjust font sizes for readability
+- Reflow game header from row to column
+- Make letter notifications full-width on small screens
+- Ensure buttons are touch-friendly
+- Breakpoint at 768px"
+
+Prompt 13: Animation and Transitions
+"Add smooth animations and transitions throughout the game:
+- Stat bar width changes (0.5s ease)
+- Screen transitions (fade in/out)
+- Letter slide-in from right
+- Button hover effects (transform, shadow)
+- Color changes on stat updates
+- Chart data animation"
+
+Prompt 14: Climate Calculation Algorithm
+"Write an algorithm that calculates realistic climate change progression based on environmental stat:
+- Temperature increase: higher when environment stat is low
+- Sea level rise: accelerates with poor environmental choices
+- Cumulative effects over 10 years
+- Store values with appropriate precision (temperature: 2 decimals, sea level: 1 decimal)"
+
+Prompt 15: Vietnamese Content Integration
+"Create Vietnamese text content for all game elements:
+- UI labels (Kinh tế, Môi trường, Tinh thần)
+- Event titles and descriptions
+- Choice text and impacts
+- NPC letters with authentic Vietnamese voices
+- Ending narratives
+- Instructions and guidance text"
+
+Prompt 16: Error Handling
+"Add error handling and validation:
+- Check for undefined events
+- Prevent rapid clicking during transitions
+- Validate stat values stay in range
+- Handle missing chart canvas
+- Graceful degradation if Chart.js fails to load"
+
+Prompt 17: Performance Optimization
+"Optimize game performance:
+- Use CDN for Chart.js
+- Minimize DOM manipulation
+- Use CSS transforms for animations
+- Debounce rapid interactions
+- Lazy load event data
+- Efficient stat updates"
+
+Prompt 18: Accessibility Considerations
+"Make the game more accessible:
+- Semantic HTML structure
+- Color contrast for text readability
+- Focus states for keyboard navigation
+- ARIA labels where needed
+- Text alternatives for icons
+- Readable font sizes"
+
+Prompt 19: Game Balance Testing
+"How should we balance the game to ensure:
+- No single strategy dominates
+- All endings are achievable
+- Decisions feel meaningful
+- Climate data progression is realistic
+- Stat impacts are fair and interesting
+Provide suggested stat impact values for each choice type."
+
+Prompt 20: Final Integration
+"Combine all components into a complete, working game:
+- Link HTML, CSS, and JavaScript files properly
+- Ensure proper initialization order
+- Test all user flows (menu → game → ending → replay)
+- Verify Chart.js CDN loads correctly
+- Test responsive behavior
+- Validate all interactions work smoothly"

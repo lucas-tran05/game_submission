@@ -1,0 +1,31 @@
+# Git ignore file
+# Bảo vệ API key không bị commit lên GitHub
+
+# Config files chứa API key
+js/config.js
+config.js
+.env
+.env.local
+.env.*.local
+
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+out/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
